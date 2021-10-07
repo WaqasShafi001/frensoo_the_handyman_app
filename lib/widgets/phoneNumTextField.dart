@@ -27,7 +27,7 @@ class _PhoneNumTextFieldState extends State<PhoneNumTextField> {
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10))),
         child: Container(
-          height: height * 0.064,
+          height: height * 0.065,
           width: width * 0.9,
           decoration: BoxDecoration(
             color: AppColors.white,

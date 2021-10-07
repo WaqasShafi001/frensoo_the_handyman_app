@@ -44,7 +44,7 @@ class IntroTwo extends StatelessWidget {
             width: width * 0.7,
             child: Text(
               'Now you can order services anytime anywhere through Frensoo App',
-             style: AppTextStyles.smallTitle,
+              style: AppTextStyles.smallTitle,
             ),
           ),
         ],
