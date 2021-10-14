@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54.53" height="54.156" viewBox="0 0 54.53 54.156">
+  <g id="Group_9415" data-name="Group 9415" transform="translate(-29.76 -457.79)">
+    <g id="_036-pipe_wrench" data-name="036-pipe wrench" transform="translate(29.76 457.79)">
+      <path id="Path_5049" data-name="Path 5049" d="M27.225,0A27.089,27.089,0,0,1,54.451,26.95,27.089,27.089,0,0,1,27.225,53.9,27.089,27.089,0,0,1,0,26.95,27.089,27.089,0,0,1,27.225,0Z" transform="translate(0)" fill="#1ea1f3"/>
+      <path id="Path_3188" data-name="Path 3188" d="M114.461,123.086l-10.142,13.04v2.9l-7.343,13.139,9.956,9.956a27.148,27.148,0,0,0,34.024-26.243c0-.266,0-.531-.013-.8L127.5,121.637Z" transform="translate(-86.427 -108.848)" fill="#0170b5"/>
+      <g id="Group_3781" data-name="Group 3781" transform="translate(9.351 9.542)">
+        <path id="Path_3189" data-name="Path 3189" d="M248.3,97.145l4.347-4.347a6.154,6.154,0,0,1,8.693,0l1.449,1.449a4.1,4.1,0,0,1,0,5.8L258.44,95.7a2.051,2.051,0,0,0-2.9,0l-4.347,4.347Z" transform="translate(-231.064 -91)" fill="#f3f5f9"/>
+        <path id="Path_3190" data-name="Path 3190" d="M360.577,127.433a4.1,4.1,0,0,0,0-5.8l-2.9,2.9Z" transform="translate(-328.853 -118.39)" fill="#d9e0eb"/>
+        <g id="Pipe_Wrench_1_" transform="translate(0 3.246)">
+          <g id="Group_3778" data-name="Group 3778" transform="translate(5.643 10.867)">
+            <path id="Path_3191" data-name="Path 3191" d="M142.539,231.426l-3.622-3.622,3.622-3.622,1.449,1.449-2.173,2.173,2.173,2.173Z" transform="translate(-138.917 -224.181)" fill="#596c76"/>
+          </g>
+          <g id="Group_3779" data-name="Group 3779" transform="translate(12.159 5.072)">
+            <path id="Path_3192" data-name="Path 3192" d="M0,0H4.1V2.049H0Z" transform="translate(0 2.897) rotate(-45)" fill="#596c76"/>
+          </g>
+          <g id="Group_3780" data-name="Group 3780">
+            <path id="Path_3193" data-name="Path 3193" d="M86.866,152.162a4.1,4.1,0,0,1,0-5.8l10.24-10.241-4.347-4.347,4.347-4.347,4.347,4.347,1.449-1.449-4.347-4.347,4.347-4.347,11.591,11.591-4.347,4.347-.724-.724a1.026,1.026,0,0,0-1.449,0L92.662,152.162A4.1,4.1,0,0,1,86.866,152.162Z" transform="translate(-85.667 -121.636)" fill="#f36a3d"/>
+          </g>
+        </g>
+        <path id="Path_3194" data-name="Path 3194" d="M96.976,213.28a4.1,4.1,0,0,0,5.8,0l15.311-15.312a1.026,1.026,0,0,1,1.449,0l.724.724,4.347-4.347L120.256,190Z" transform="translate(-95.778 -179.508)" fill="#ec4c36"/>
+      </g>
+    </g>
+  </g>
+</svg>

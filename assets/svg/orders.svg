@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <filter id="Path_finance" x="0" y="0" width="25" height="25" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_9423" data-name="Group 9423" transform="translate(-23.5 -596.698)">
+    <g transform="matrix(1, 0, 0, 1, 23.5, 596.7)" filter="url(#Path_finance)">
+      <path id="Path_finance-2" data-name="Path / finance" d="M6,16.5,3,19.44V11H6m5,3.66L9.43,13.32,8,14.64V7h3m5,6-3,3V3h3m2.81,9.81L17,11h5v5l-1.79-1.79L13,21.36,9.53,18.34,5.75,22H3l6.47-6.34L13,18.64" transform="translate(0 -3)" fill="#1ea1f3"/>
+    </g>
+  </g>
+</svg>

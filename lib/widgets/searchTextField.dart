@@ -32,12 +32,12 @@ class _SearchTextFieldState extends State<SearchTextField> {
               // width: 0.0 produces a thin "hairline" border
               borderSide: BorderSide(color: AppColors.blue, width: 1),
               borderRadius: BorderRadius.all(
-                Radius.circular(15),
+                Radius.circular(12),
               ),
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.all(
-                Radius.circular(15),
+                Radius.circular(12),
               ),
             ),
           ),
