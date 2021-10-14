@@ -4,7 +4,6 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:frensoo_the_handyman_app/common/appColors.dart';
-import 'package:frensoo_the_handyman_app/flow/home/homeScreen.dart';
 import 'package:frensoo_the_handyman_app/flow/introScreens/introScreens.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';

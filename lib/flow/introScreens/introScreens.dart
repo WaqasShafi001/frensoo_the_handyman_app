@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:frensoo_the_handyman_app/common/appColors.dart';
 import 'package:frensoo_the_handyman_app/common/appStyles.dart';
-import 'package:frensoo_the_handyman_app/flow/home/homeScreen.dart';
+import 'package:frensoo_the_handyman_app/flow/customNavBar/bottomNavBarView.dart';
 import 'package:get/get.dart';
 
 import 'introOne.dart';
@@ -86,7 +86,7 @@ class _IntroScreensState extends State<IntroScreens> {
                               duration: Duration(milliseconds: 700),
                               curve: Curves.easeIn);
                         } else {
-                          Get.offAll(HomeScreen());
+                          Get.offAll(BottomNavBarView());
                         }
                       },
                       child: Align(
@@ -123,7 +123,7 @@ class _IntroScreensState extends State<IntroScreens> {
               top: height * 0.06,
               right: width * 0.07,
               child: InkWell(
-                onTap: () => Get.to(HomeScreen()),
+                onTap: () => Get.to(BottomNavBarView()),
                 child: Material(
                   color: Colors.transparent,
                   child: Text('Skip', style: AppTextStyles.smallTitle),

@@ -39,6 +39,7 @@ dependencies:
   animate_do: any
   flutter_svg : any
   country_code_picker: any
+  persistent_bottom_nav_bar: any
 
 dev_dependencies:
   flutter_test:
