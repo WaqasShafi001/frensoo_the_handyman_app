@@ -7,6 +7,8 @@ import 'package:get/get.dart';
 import 'common/appColors.dart';
 import 'flow/splashScreen/splashScreen.dart';
 
+
+
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
