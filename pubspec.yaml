@@ -40,7 +40,10 @@ dependencies:
   flutter_svg : any
   country_code_picker: any
   persistent_bottom_nav_bar: any
-  carousel_slider: ^4.0.0
+  flutter_carousel_slider: ^1.0.8
+  flutter_rating_stars: ^1.0.3+4
+  flutter_rating_bar: ^4.0.0
+  percent_indicator: ^3.4.0
 
 dev_dependencies:
   flutter_test:

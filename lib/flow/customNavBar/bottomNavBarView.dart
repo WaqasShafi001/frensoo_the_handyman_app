@@ -1,15 +1,17 @@
-// ignore_for_file: file_names, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
+// ignore_for_file: file_names, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, unused_local_variable
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:frensoo_the_handyman_app/common/appColors.dart';
+import 'package:frensoo_the_handyman_app/flow/screens/Catagories.dart';
 import 'package:frensoo_the_handyman_app/flow/screens/homeScreen.dart';
 import 'package:frensoo_the_handyman_app/widgets/appBar.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
-
+PersistentTabController? bottomcontroller;
 class BottomNavBarView extends StatefulWidget {
+  
   const BottomNavBarView({Key? key}) : super(key: key);
 
   @override
@@ -17,13 +19,13 @@ class BottomNavBarView extends StatefulWidget {
 }
 
 class _BottomNavBarViewState extends State<BottomNavBarView> {
-  PersistentTabController? _controller;
+  
   bool? _hideNavBar;
 
   @override
   void initState() {
     super.initState();
-    _controller = PersistentTabController(
+    bottomcontroller = PersistentTabController(
       initialIndex: 0,
     );
 
@@ -33,11 +35,8 @@ class _BottomNavBarViewState extends State<BottomNavBarView> {
   List<Widget> _buildScreens() {
     return [
       HomeScreen(),
-      Container(
-        child: Center(
-          child: Text('2nd screen'),
-        ),
-      ),
+      Categories(),
+
       Container(
         child: Center(
           child: Text('3rd screen'),
@@ -128,7 +127,9 @@ class _BottomNavBarViewState extends State<BottomNavBarView> {
       appBar: customAppbar(),
       body: PersistentTabView(
         context,
-        controller: _controller!,
+        //....generate global controller and jump second tabe ...........// 
+        controller: bottomcontroller!,
+        //..............................//
         screens: _buildScreens(),
         items: _navBarsItems(),
         confineInSafeArea: true,
@@ -136,6 +137,7 @@ class _BottomNavBarViewState extends State<BottomNavBarView> {
         backgroundColor: AppColors.white,
         handleAndroidBackButtonPress: true,
         stateManagement: false,
+        
         navBarHeight: height * 0.07,
         hideNavigationBarWhenKeyboardShows: true,
         selectedTabScreenContext: (context) {},

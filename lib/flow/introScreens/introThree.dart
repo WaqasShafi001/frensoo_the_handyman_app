@@ -37,7 +37,7 @@ class _IntroThreeState extends State<IntroThree> {
           ),
           SizedBox(
             height: height * 0.06,
-            width: width * 0.8,
+            width: width * 0.9,
             child: Center(
               child: Text(
                 'Your home services expert',

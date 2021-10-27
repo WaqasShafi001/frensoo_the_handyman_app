@@ -5,10 +5,23 @@ import 'package:frensoo_the_handyman_app/common/appColors.dart';
 customAppbar() {
   return PreferredSize(
     child: SafeArea(
-      child: Card(
-        elevation: 3,
-        shadowColor: AppColors.greyColor.withOpacity(0.4),
-        color: AppColors.white,
+      child: Container(
+        decoration: BoxDecoration(
+          color: AppColors.white,
+          boxShadow:[
+            BoxShadow(
+              color: AppColors.greyColor.withOpacity(0.4),
+              blurRadius: 3
+            ),
+            
+          ]
+          
+        ),
+
+        // elevation: 3,
+        // shadowColor: AppColors.greyColor.withOpacity(0.4),
+        // color: AppColors.white,
+
         child: Column(
           children: [
             // SizedBox(

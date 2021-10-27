@@ -17,34 +17,44 @@ class _SearchTextFieldState extends State<SearchTextField> {
     var height = Get.height;
     var width = Get.width;
     return Center(
-      child: Container(
-        height: height * 0.044,
-        width: width * 0.9,
-        child: TextFormField(
-          decoration: InputDecoration(
-            suffixIcon: Icon(
-              Icons.search,
-              color: AppColors.blue,
-              size: 25,
+      child: Column(
+        children: [
+           SizedBox(
+              height: 10,
             ),
-            isDense: true,
-            enabledBorder: const OutlineInputBorder(
-              // width: 0.0 produces a thin "hairline" border
-              borderSide: BorderSide(color: AppColors.blue, width: 1),
-              borderRadius: BorderRadius.all(
-                Radius.circular(12),
+          Container(
+            height: height * 0.044,
+            width: width * 0.9,
+            child: TextFormField(
+              decoration: InputDecoration(
+                suffixIcon: Icon(
+                  Icons.search,
+                  color: AppColors.blue,
+                  size: 25,
+                ),
+                isDense: true,
+                enabledBorder: const OutlineInputBorder(
+                  // width: 0.0 produces a thin "hairline" border
+                  borderSide: BorderSide(color: AppColors.blue, width: 1),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(12),
+                  ),
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(12),
+                  ),
+                ),
               ),
-            ),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.all(
-                Radius.circular(12),
-              ),
+              keyboardType: TextInputType.name,
+              textInputAction: TextInputAction.done,
+              textAlignVertical: TextAlignVertical.center,
             ),
           ),
-          keyboardType: TextInputType.name,
-          textInputAction: TextInputAction.done,
-          textAlignVertical: TextAlignVertical.center,
-        ),
+           SizedBox(
+              height: 10,
+            ),
+        ],
       ),
     );
   }
