@@ -29,7 +29,7 @@ class _HourlyState extends State<HourlyService> {
     var height = Get.height;
     var width = Get.width;
     return Scaffold(
-     // appBar: customAppbar(),
+      appBar: customAppbar(),
      backgroundColor: Colors.white,
       body: CustomScrollView(
         slivers: [

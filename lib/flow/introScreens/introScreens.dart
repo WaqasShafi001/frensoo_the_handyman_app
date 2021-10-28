@@ -1,9 +1,11 @@
 // ignore_for_file: file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:frensoo_the_handyman_app/Global/currentLocation.dart';
 import 'package:frensoo_the_handyman_app/common/appColors.dart';
 import 'package:frensoo_the_handyman_app/common/appStyles.dart';
 import 'package:frensoo_the_handyman_app/flow/customNavBar/bottomNavBarView.dart';
+import 'package:frensoo_the_handyman_app/flow/OTP/OtpScreen.dart';
 import 'package:get/get.dart';
 
 import 'introOne.dart';
@@ -18,6 +20,13 @@ class IntroScreens extends StatefulWidget {
 }
 
 class _IntroScreensState extends State<IntroScreens> {
+  @override
+  void initState() {
+    getLocation();
+    gpsService(context);
+    super.initState();
+  }
+
   int currentIndex = 0;
   List listdot = [1, 2, 3];
   PageController pageController = PageController();
@@ -86,7 +95,7 @@ class _IntroScreensState extends State<IntroScreens> {
                               duration: Duration(milliseconds: 700),
                               curve: Curves.easeIn);
                         } else {
-                          Get.offAll(BottomNavBarView());
+                          Get.offAll(OTTPScreenPage());
                         }
                       },
                       child: Align(

@@ -40,10 +40,13 @@ dependencies:
   flutter_svg : any
   country_code_picker: any
   persistent_bottom_nav_bar: any
-  flutter_carousel_slider: ^1.0.8
+  flutter_carousel_slider: any
+  pin_code_fields: any
   flutter_rating_stars: ^1.0.3+4
   flutter_rating_bar: ^4.0.0
   percent_indicator: ^3.4.0
+  google_maps_place_picker: 2.1.0-nullsafety.3
+  geolocator: any
 
 dev_dependencies:
   flutter_test:

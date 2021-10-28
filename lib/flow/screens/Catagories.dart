@@ -25,6 +25,7 @@ class _CategoriesState extends State<Categories> {
     var height = Get.height;
     var width = Get.width;
     return Scaffold(
+      appBar: customAppbar(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -52,25 +53,22 @@ class _CategoriesState extends State<Categories> {
                     width: width,
                     serviceTitle: 'Permotion and Discount',
                     imgPath: 'assets/svg/permotion.svg',
-                    
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 13,top: 5),
+                    padding: EdgeInsets.only(left: 13, top: 5),
                     child: GestureDetector(
                       onTap: () {
                         pushNewScreen(
-                                context,
-                                screen: HourlyService(),
-                                withNavBar:
-                                    true, // OPTIONAL VALUE. True by default.
-                                pageTransitionAnimation:
-                                    PageTransitionAnimation.cupertino,
-                              );
-                
-                },
+                          context,
+                          screen: HourlyService(),
+                          withNavBar: true, // OPTIONAL VALUE. True by default.
+                          pageTransitionAnimation:
+                              PageTransitionAnimation.cupertino,
+                        );
+                      },
                       child: CategoryWidget(
                         height: height,
-                        width: width ,
+                        width: width,
                         serviceTitle: 'Hourly Services ',
                         imgPath: 'assets/svg/hourly.svg',
                       ),
@@ -93,30 +91,26 @@ class _CategoriesState extends State<Categories> {
                 ],
               ),
             ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height*0.015
-            ),
-            
+            SizedBox(height: MediaQuery.of(context).size.height * 0.015),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 GestureDetector(
                   onTap: () {
-
                     pushNewScreen(
-                                context,
-                                screen: AirConditionerServiceScreen(),
-                                withNavBar:
-                                    true, // OPTIONAL VALUE. True by default.
-                                pageTransitionAnimation:
-                                    PageTransitionAnimation.cupertino,
-                              );
+                      context,
+                      screen: AirConditionerServiceScreen(),
+                      withNavBar: true, // OPTIONAL VALUE. True by default.
+                      pageTransitionAnimation:
+                          PageTransitionAnimation.cupertino,
+                    );
 
-                   // Get.to(AirConditionerServiceScreen());
+                    // Get.to(AirConditionerServiceScreen());
                   },
                   child: CategoryWidget(
                     height: height,
-                    width: width ,
+                    width: width,
                     serviceTitle: 'Air Conditioning Service',
                     imgPath: 'assets/svg/AirConditionService.svg',
                   ),
@@ -129,7 +123,7 @@ class _CategoriesState extends State<Categories> {
                 ),
                 CategoryWidget(
                   height: height,
-                  width: width ,
+                  width: width,
                   serviceTitle: 'Woodwork and Carpenter Service',
                   imgPath: 'assets/svg/carpenter.svg',
                 ),
@@ -142,41 +136,38 @@ class _CategoriesState extends State<Categories> {
               ],
             ),
 
-
-
-            
             // SizedBox(
             //   height: height * 0.010,
             // ),
             Padding(
-              padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.020),
+              padding: EdgeInsets.only(
+                  left: MediaQuery.of(context).size.width * 0.020),
               child: Row(
                 children: [
                   CategoryWidget(
-                    height: height ,
-                    width: width ,
+                    height: height,
+                    width: width,
                     serviceTitle: 'Permotion and Discount',
                     imgPath: 'assets/svg/PalambringService.svg',
                   ),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width*0.020,
+                    width: MediaQuery.of(context).size.width * 0.020,
                   ),
                   CategoryWidget(
-                    height: height ,
-                    width: width ,
+                    height: height,
+                    width: width,
                     serviceTitle: 'Energy Services ',
                     imgPath: 'assets/svg/services.svg',
                   ),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width*0.050,
+                    width: MediaQuery.of(context).size.width * 0.050,
                   ),
                   CategoryWidget(
-                    height: height ,
-                    width: width ,
+                    height: height,
+                    width: width,
                     serviceTitle: 'Electronic Appliance Repair Services ',
                     imgPath: 'assets/svg/electronic.svg',
                   ),
-
                 ],
               ),
             ),
@@ -202,8 +193,8 @@ class _CategoriesState extends State<Categories> {
               child: Row(
                 children: [
                   CategoryWidget(
-                    height: height ,
-                    width: width ,
+                    height: height,
+                    width: width,
                     serviceTitle: 'Disinfecting and pest control',
                     imgPath: 'assets/svg/pestcontrol.svg',
                   ),
@@ -231,22 +222,22 @@ class _CategoriesState extends State<Categories> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 CategoryWidget(
-                  height: height ,
-                  width: width ,
+                  height: height,
+                  width: width,
                   serviceTitle: 'Cleaning Service',
                   imgPath: 'assets/svg/cleaning.svg',
                 ),
                 CategoryWidget(
-                  height: height ,
-                  width: width ,
+                  height: height,
+                  width: width,
                   serviceTitle: 'Cooking',
                   imgPath: 'assets/svg/cooking.svg',
                 ),
                 Padding(
                   padding: EdgeInsets.only(left: 4),
                   child: CategoryWidget(
-                    height: height ,
-                    width: width ,
+                    height: height,
+                    width: width,
                     serviceTitle: 'Washing and Ironing',
                     imgPath: 'assets/svg/cooking.svg',
                   ),
@@ -254,22 +245,22 @@ class _CategoriesState extends State<Categories> {
                 Padding(
                   padding: EdgeInsets.only(left: 3),
                   child: CategoryWidget(
-                    height: height ,
-                    width: width ,
+                    height: height,
+                    width: width,
                     serviceTitle: 'Shifting and Moving',
                     imgPath: 'assets/svg/shifting.svg',
                   ),
                 )
               ],
             ),
-            
+
             Padding(
               padding: EdgeInsets.only(left: width * 0.030),
               child: Row(
                 children: [
                   CategoryWidget(
-                    height: height ,
-                    width: width ,
+                    height: height,
+                    width: width,
                     serviceTitle: 'Educational Services',
                     imgPath: 'assets/svg/EducationalServise.svg',
                   ),
@@ -298,8 +289,8 @@ class _CategoriesState extends State<Categories> {
               child: Row(
                 children: [
                   CategoryWidget(
-                    height: height ,
-                    width: width ,
+                    height: height,
+                    width: width,
                     serviceTitle: 'CCTV Surveillance Service',
                     imgPath: 'assets/svg/cctv.svg',
                   ),

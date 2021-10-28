@@ -13,5 +13,7 @@ class AppColors {
   static const blackLightColor = Color(0xff707070);
   static const blackLightContainer = Color(0xffE4E4E4);
   static const yellowcolor = Color(0xffFFD800);
-  
+  static const redColor = Color(0xffEB4336);
+  static const fbButtonColor = Color(0xff1a73eb);
+  static final lightGreyColor = Colors.grey.withOpacity(0.08);
 }

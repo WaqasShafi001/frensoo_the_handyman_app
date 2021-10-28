@@ -6,13 +6,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_carousel_slider/carousel_slider.dart';
 import 'package:flutter_carousel_slider/carousel_slider_indicators.dart';
-import 'package:flutter_carousel_slider/carousel_slider_transforms.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:frensoo_the_handyman_app/CustomUiWidgets/CustomUi.dart';
 import 'package:frensoo_the_handyman_app/common/appColors.dart';
 import 'package:frensoo_the_handyman_app/common/appStyles.dart';
 import 'package:frensoo_the_handyman_app/flow/customNavBar/bottomNavBarView.dart';
 import 'package:frensoo_the_handyman_app/flow/screens/Catagories.dart';
+import 'package:frensoo_the_handyman_app/widgets/appBar.dart';
 import 'package:frensoo_the_handyman_app/widgets/searchTextField.dart';
 import 'package:get/get.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
@@ -34,7 +34,8 @@ class _HomeScreenState extends State<HomeScreen> {
     var height = Get.height;
     var width = Get.width;
     return Scaffold(
-        backgroundColor: AppColors.bgColor,
+        appBar: customAppbar(),
+        backgroundColor: AppColors.white,
         body: SingleChildScrollView(
           // dragStartBehavior: DragStartBehavior.start,
           scrollDirection: Axis.vertical,
@@ -104,17 +105,15 @@ class _HomeScreenState extends State<HomeScreen> {
                           GestureDetector(
                             onTap: () {
                               pushNewScreen(
-                                
                                 context,
                                 screen: Categories(),
-                                withNavBar:
-                                    true,
-                                     // OPTIONAL VALUE. True by default.
+                                withNavBar: true,
+                                // OPTIONAL VALUE. True by default.
                                 pageTransitionAnimation:
                                     PageTransitionAnimation.cupertino,
                               );
 
-                             // bottomcontroller!.jumpToTab(1);
+                              // bottomcontroller!.jumpToTab(1);
                             },
                             child: Text(
                               'See All',
@@ -599,7 +598,3 @@ class _HomeScreenState extends State<HomeScreen> {
         ));
   }
 }
-
-
-
-

@@ -31,13 +31,13 @@ class _AcServicePageState extends State<AcServicePage> {
     var width = Get.width;
     return Scaffold(
       backgroundColor: Colors.white,
-     // appBar: customAppbar(),
+      appBar: customAppbar(),
       body: CustomScrollView(
         // ignore: prefer_const_literals_to_create_immutables
         slivers: [
           SliverToBoxAdapter(
             child: SizedBox(
-              height: height * 0.005,
+              height: height * 0.01,
             ),
           ),
           SliverToBoxAdapter(

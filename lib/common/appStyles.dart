@@ -17,4 +17,9 @@ class AppTextStyles {
     color: AppColors.blackColor,
     fontWeight: FontWeight.normal,
   );
+  static TextStyle smallTitleBlue = TextStyle(
+    fontSize: 15,
+    color: AppColors.blue,
+    fontWeight: FontWeight.normal,
+  );
 }

@@ -36,7 +36,7 @@ class _AirConditionerServiceScreenState
     var width = Get.width;
     return Scaffold(
       backgroundColor: Colors.white,
-     // appBar: customAppbar(),
+      appBar: customAppbar(),
       body: CustomScrollView(
         // ignore: prefer_const_literals_to_create_immutables
         slivers: [
@@ -156,7 +156,7 @@ class ServiceCard2 extends StatelessWidget {
         },
         child: Container(
           margin: EdgeInsets.all(12),
-          height: height * 0.35,
+          height: height * 0.365,
           width: width,
           //color: Colors.red,
           decoration: BoxDecoration(

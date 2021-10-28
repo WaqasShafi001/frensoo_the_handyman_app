@@ -4,14 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:frensoo_the_handyman_app/common/appColors.dart';
 import 'package:frensoo_the_handyman_app/flow/screens/Catagories.dart';
+import 'package:frensoo_the_handyman_app/flow/screens/ProfileScreen.dart';
 import 'package:frensoo_the_handyman_app/flow/screens/homeScreen.dart';
 import 'package:frensoo_the_handyman_app/widgets/appBar.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
+
 PersistentTabController? bottomcontroller;
+
 class BottomNavBarView extends StatefulWidget {
-  
   const BottomNavBarView({Key? key}) : super(key: key);
 
   @override
@@ -19,7 +21,6 @@ class BottomNavBarView extends StatefulWidget {
 }
 
 class _BottomNavBarViewState extends State<BottomNavBarView> {
-  
   bool? _hideNavBar;
 
   @override
@@ -36,7 +37,6 @@ class _BottomNavBarViewState extends State<BottomNavBarView> {
     return [
       HomeScreen(),
       Categories(),
-
       Container(
         child: Center(
           child: Text('3rd screen'),
@@ -47,11 +47,7 @@ class _BottomNavBarViewState extends State<BottomNavBarView> {
           child: Text('4th screen'),
         ),
       ),
-      Container(
-        child: Center(
-          child: Text('5th screen'),
-        ),
-      ),
+      ProfileScreen(),
     ];
   }
 
@@ -124,10 +120,10 @@ class _BottomNavBarViewState extends State<BottomNavBarView> {
     var width = Get.width;
     return Scaffold(
       backgroundColor: AppColors.white,
-      appBar: customAppbar(),
+      //appBar: customAppbar(),
       body: PersistentTabView(
         context,
-        //....generate global controller and jump second tabe ...........// 
+        //....generate global controller and jump second tabe ...........//
         controller: bottomcontroller!,
         //..............................//
         screens: _buildScreens(),
@@ -137,7 +133,7 @@ class _BottomNavBarViewState extends State<BottomNavBarView> {
         backgroundColor: AppColors.white,
         handleAndroidBackButtonPress: true,
         stateManagement: false,
-        
+
         navBarHeight: height * 0.07,
         hideNavigationBarWhenKeyboardShows: true,
         selectedTabScreenContext: (context) {},
