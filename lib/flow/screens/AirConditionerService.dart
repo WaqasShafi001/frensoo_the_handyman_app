@@ -190,12 +190,12 @@ class ServiceCard2 extends StatelessWidget {
                     Text(
                       serviceTitle!,
                       style:
-                          TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                     ),
                     Text(
                       'RS. ${servicePrice!}',
                       style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                     )
                   ],
                 ),
@@ -211,7 +211,7 @@ class ServiceCard2 extends StatelessWidget {
                     Text(
                       'price varies after inspaction',
                       style:
-                          TextStyle(fontSize: 8, fontWeight: FontWeight.w600),
+                          TextStyle(fontSize: 10, fontWeight: FontWeight.w600),
                     )
                   ],
                 ),
@@ -236,49 +236,49 @@ class ServiceCard2 extends StatelessWidget {
                         )
                       ],
                     ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: width * 0.030),
-                      child: Row(
-                        children: [
-                          Container(
-                            child: Center(
-                                child: Text(
-                              '-',
-                              style: TextStyle(fontSize: 18),
-                            )),
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(6),
-                                border: Border.all(color: Colors.black45)),
-                            width: width * 0.070,
-                            height: height * 0.030,
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(left: 10, right: 10),
-                            child: Center(
-                                child: Text(
-                              '1',
-                              style: TextStyle(fontSize: 13),
-                            )),
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                                border: Border.all(color: Colors.black45)),
-                            width: width * 0.11,
-                            height: height * 0.030,
-                          ),
-                          Container(
-                              child: Center(
-                                  child: Text(
-                                '+',
-                                style: TextStyle(fontSize: 13),
-                              )),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(6),
-                                  border: Border.all(color: Colors.black45)),
-                              width: width * 0.090,
-                              height: height * 0.030),
-                        ],
-                      ),
-                    )
+                    // Padding(
+                    //   padding: EdgeInsets.symmetric(horizontal: width * 0.030),
+                    //   child: Row(
+                    //     children: [
+                    //       Container(
+                    //         child: Center(
+                    //             child: Text(
+                    //           '-',
+                    //           style: TextStyle(fontSize: 18),
+                    //         )),
+                    //         decoration: BoxDecoration(
+                    //             borderRadius: BorderRadius.circular(6),
+                    //             border: Border.all(color: Colors.black45)),
+                    //         width: width * 0.070,
+                    //         height: height * 0.030,
+                    //       ),
+                    //       Container(
+                    //         margin: EdgeInsets.only(left: 10, right: 10),
+                    //         child: Center(
+                    //             child: Text(
+                    //           '1',
+                    //           style: TextStyle(fontSize: 13),
+                    //         )),
+                    //         decoration: BoxDecoration(
+                    //             borderRadius: BorderRadius.circular(8),
+                    //             border: Border.all(color: Colors.black45)),
+                    //         width: width * 0.11,
+                    //         height: height * 0.030,
+                    //       ),
+                    //       Container(
+                    //           child: Center(
+                    //               child: Text(
+                    //             '+',
+                    //             style: TextStyle(fontSize: 13),
+                    //           )),
+                    //           decoration: BoxDecoration(
+                    //               borderRadius: BorderRadius.circular(6),
+                    //               border: Border.all(color: Colors.black45)),
+                    //           width: width * 0.090,
+                    //           height: height * 0.030),
+                    //     ],
+                    //   ),
+                    // )
                   ],
                 ),
               ),

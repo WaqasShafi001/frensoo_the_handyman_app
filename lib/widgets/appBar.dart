@@ -83,8 +83,7 @@ customAppbar() {
                           ],
                         ),
                       ),
-                                                  Icon(Icons.keyboard_arrow_down, color: AppColors.blue),
-
+                      Icon(Icons.keyboard_arrow_down, color: AppColors.blue),
                     ],
                   ),
                 ),
